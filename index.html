@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backpack Premium Wanita</title>
+  <style>
+    :root {
+      --primary-color: #da4a91;
+      --secondary-color: #fff0f7;
+      --highlight-color: #ffe0ec;
+      --cta-color: #c9184a;
+      --text-color: #222;
+      --bg-color: #ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    header {
+      background-color: var(--secondary-color);
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 {
+      color: var(--primary-color);
+      margin: 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 1rem;
+    }
+    .hero img {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 1rem;
+      margin: 0.5rem;
+      animation: zoomIn 1s;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary-color);
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background-color: var(--highlight-color);
+      padding: 1rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .urgency {
+      text-align: center;
+      background-color: #ffb3c1;
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: var(--cta-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      animation: bounce 2s infinite;
+    }
+    .sticky-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+    }
+    .sticky-banner a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Backpack Premium untuk Wanita Modern</h1>
+    <p>Elegan, Fungsional, dan Terjangkau</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://s.alicdn.com/@sc04/kf/H1f93efe2234742169373e0c3fd14de52s.jpg_720x720q50.jpg" alt="Backpack 1">
+    <img src="https://s.alicdn.com/@sc04/kf/H6727a8cf3bac4b25abdf5ed73e412409s.jpg_720x720q50.jpg" alt="Backpack 2">
+    <img src="https://s.alicdn.com/@sc04/kf/He9298b5b8fe544168494142444bc8746t.jpg_720x720q50.jpg" alt="Backpack 3">
+  </section>
+
+  <section class="section">
+    <h2>Kenapa Pilih Backpack Ini?</h2>
+    <p>Dirancang khusus untuk wanita Indonesia yang aktif dan stylish. Material berkualitas dengan desain elegan, cocok untuk kerja, kuliah, atau jalan-jalan.</p>
+  </section>
+
+  <section class="section">
+    <h2>Manfaat Utama</h2>
+    <ul>
+      <li>👜 Desain elegan dan modern, cocok untuk segala usia</li>
+      <li>💧 Bahan tahan air dan kuat</li>
+      <li>📦 Kapasitas besar, muat laptop & perlengkapan sehari-hari</li>
+      <li>👛 Harga terjangkau, kualitas premium</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Testimoni Pelanggan</h2>
+    <ul>
+      <li><strong>Anisa, 29 – Bandung:</strong> "Modelnya keren, kualitasnya bagus banget!"</li>
+      <li><strong>Maria, 34 – Jakarta:</strong> "Backpack ini jadi favorit saya ke kantor."</li>
+      <li><strong>Dewi, 41 – Yogyakarta:</strong> "Bahannya awet, kelihatan mahal!"</li>
+      <li><strong>Sri, 37 – Surabaya:</strong> "Beli 1 untuk saya, 1 lagi buat kado adik."</li>
+    </ul>
+  </section>
+
+  <section class="urgency">
+    <h3>⚠️ PROMO TERBATAS HARI INI!</h3>
+    <p>Harga normal <s>Rp 249.000</s>, sekarang hanya <strong>Rp 166.000</strong>! Stok terbatas!</p>
+    <div id="countdown"></div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <a href="https://emma.orderonline.id/backpack-for-women-and-girls-2027-1" class="cta-button">Pesan Sekarang</a>
+  </section>
+
+  <div class="sticky-banner">
+    🎒 Promo Hari Ini: Rp 166.000 <s>Rp 249.000</s>
+    <a href="https://emma.orderonline.id/backpack-for-women-and-girls-2027-1">Pesan Sekarang</a>
+  </div>
+
+  <script>
+    const countdown = document.getElementById("countdown");
+    const targetTime = new Date();
+    targetTime.setHours(targetTime.getHours() + 6);
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetTime - now;
+      if (diff <= 0) {
+        countdown.innerHTML = "Promo berakhir hari ini!";
+        return;
+      }
+      const hrs = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+      countdown.innerHTML = `⏳ Sisa waktu promo: ${hrs}j ${mins}m ${secs}d`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
